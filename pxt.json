@@ -1,0 +1,18 @@
+{
+    "name": "pxt-kitronik-stopbit",
+    "version": "1.0.3",
+    "description": "Blocks to simplify using Kitronik STOP:bit board in PXT",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "ns.ts",
+        "stopbit.ts"
+    ],
+    "testFiles": [
+        "tests.ts"
+    ],
+    "public": true
+}
