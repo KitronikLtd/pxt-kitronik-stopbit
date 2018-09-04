@@ -1,0 +1,15 @@
+{
+  "Kitronik_STOPbit.DisplayLights.Off|block": "Off",
+  "Kitronik_STOPbit.DisplayLights.On|block": "On",
+  "Kitronik_STOPbit.LightColours.Green|block": "Green",
+  "Kitronik_STOPbit.LightColours.Red|block": "Red",
+  "Kitronik_STOPbit.LightColours.Yellow|block": "Yellow",
+  "Kitronik_STOPbit.LightStates.GetReady|block": "Get Ready",
+  "Kitronik_STOPbit.LightStates.Go|block": "Go",
+  "Kitronik_STOPbit.LightStates.ReadyToStop|block": "Ready To Stop",
+  "Kitronik_STOPbit.LightStates.Stop|block": "Stop",
+  "Kitronik_STOPbit.trafficLightLED|block": "Turn %ledColour|Traffic Light %illumination|",
+  "Kitronik_STOPbit.trafficLightState|block": "Make Traffic Light state to %lightState|",
+  "Kitronik_STOPbit|block": "Kitronik STOP:bit",
+  "{id:category}Kitronik_STOPbit": "Kitronik_STOPbit"
+}
