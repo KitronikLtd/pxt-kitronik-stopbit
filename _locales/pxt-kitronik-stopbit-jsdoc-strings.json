@@ -1,9 +1,0 @@
-{
-  "Kitronik_STOPbit": "Kitronik Stopbit Package\r\nVersion 1.0\r\nRelease Date:",
-  "Kitronik_STOPbit.DisplayLights": "Traffic light on/off states",
-  "Kitronik_STOPbit.LightColours": "Traffic light colour options",
-  "Kitronik_STOPbit.LightStates": "Different states the traffic light can enter",
-  "Kitronik_STOPbit.trafficLightLED": "Select a light and turn it on or off",
-  "Kitronik_STOPbit.trafficLightLED|param|ledColour": "@param illumination",
-  "Kitronik_STOPbit.trafficLightState": "Select a traffic light state"
-}
