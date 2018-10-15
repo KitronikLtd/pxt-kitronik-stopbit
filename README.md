@@ -33,5 +33,5 @@ MIT
 
 
 ```package
-pxt-kitronik-servo-lite=github:KitronikLtd/pxt-kitronik-stopbit
+pxt-kitronik-stopbit=github:KitronikLtd/pxt-kitronik-stopbit
 ```
