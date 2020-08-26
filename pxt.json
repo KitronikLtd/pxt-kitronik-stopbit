@@ -8,7 +8,8 @@
     },
     "files": [
         "README.md",
-        "stopbit.ts"
+        "stopbit.ts",
+        "BasicSequence.md"
     ],
     "testFiles": [
         "tests.ts"
