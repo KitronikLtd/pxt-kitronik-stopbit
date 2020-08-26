@@ -7,11 +7,11 @@
 ### Introduction @unplugged
 Learn how to use the Kitronik STOP:bit and code a basic traffic light sequence with a BBC micro:bit. 
 
-![Stop Bit Red Light On](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/Stop-Bit-Red-Light-On.jpg)
+![Stop-Bit-Red-Light-On](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/Stop-Bit-Red-Light-On.jpg)
 
 ## Assembly
 ### Step 1 @unplugged
-If not already done, attach the BBC micro:bit onto STOP:bit.  Here is a link to the datasheet to guide you.
+If not already done, attach the BBC micro:bit onto STOP:bit.  Click ![Here] (https://resources.kitronik.co.uk/pdf/5642-stop-bit-bbc-microbit-pedestrian-crossing-traffic-light-datasheet.pdf) is a link to the datasheet to guide you. 
 
 
 ### Step 2
@@ -47,7 +47,7 @@ input.onButtonPressed(Button.A, function () {
 ```
 
 ### Step 5
-All the LED's will turn on with the button press.  See if you can create the similar code to turn them the LED's off when button B is pressed.
+All the LED's will turn on with the button press.  See if you can create the similar code to turn them the LED's off when ``||input:onButtonB||`` is pressed.
 #### ~ tutorialhint
 ```blocks
 input.onButtonPressed(Button.A, function () {
