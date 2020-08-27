@@ -7,7 +7,7 @@
 ### Introduction @unplugged
 Learn how to use the Kitronik STOP:bit and code a basic traffic light sequence with a BBC micro:bit. 
 
-![Stop-Bit-Red-Light-On](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/Stop-Bit-Red-Light-On.jpg)
+![StopBit on Red](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/Stop-Bit-Red-Light-On.jpg)
 
 ## Assembly
 ### Step 1 @unplugged
@@ -69,7 +69,7 @@ Connect your BBC micro:bit and click ``|Download|``.  Once programmed, power the
 ### Lights are working @unplugged
 Our lights and assembly are working. Great! Lets start the next step to coding the light sequence.  For this get a pen and paper see if you can write down the traffic light sequence. Think about which lights are on and off as well.
 Once you are done, come back and click OK to get to the next stage.
-![Note-Green](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/Note-Green.jpg)
+![Note and Pen](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/Note-Green.jpg)
 
 ## Traffic light Sequence
 
@@ -169,6 +169,33 @@ basic.forever(function () {
 ### Step 13
 Connect your BBC micro:bit and click ``|Download|``.  Once programmed, power the BBC micro:bit and see if there is traffic light sequence is correct.
 
+### Timing of the lights @unplugged
+The code is running the correct sequence, but when compared to a actually traffic lights, the timing of each pause are not all the same. We can fix that!
+
+### Step 14
+Each of the pause blocks are set to 1 second (1000 milliseconds).  Change each of these pauses time length to get something similar.  For example Red and Yellow lights together are only on for a short period of time.
+#### ~ tutorialhint
+```blocks
+basic.forever(function () {
+    Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Red, Kitronik_STOPbit.DisplayLights.On)
+    Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Yellow, Kitronik_STOPbit.DisplayLights.Off)
+    Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Green, Kitronik_STOPbit.DisplayLights.Off)
+    basic.pause(2000)
+    Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Red, Kitronik_STOPbit.DisplayLights.On)
+    Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Yellow, Kitronik_STOPbit.DisplayLights.On)
+    Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Green, Kitronik_STOPbit.DisplayLights.Off)
+    basic.pause(500)
+    Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Red, Kitronik_STOPbit.DisplayLights.Off)
+    Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Yellow, Kitronik_STOPbit.DisplayLights.Off)
+    Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Green, Kitronik_STOPbit.DisplayLights.On)
+    basic.pause(2000)
+    Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Red, Kitronik_STOPbit.DisplayLights.Off)
+    Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Yellow, Kitronik_STOPbit.DisplayLights.On)
+    Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Green, Kitronik_STOPbit.DisplayLights.Off)
+    basic.pause(1000)
+})
+```
+
 ### Optimis Your Code @unplugged
 If you have got your traffic light sequence Well Done! We have worked out how to step along a sequence and code each of those steps.
 When looking at the code, it does look very long.  There is a way we can improve the code and get short with the same functionality. Let's see what we can do.
@@ -182,13 +209,13 @@ basic.forever(function () {
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Red, Kitronik_STOPbit.DisplayLights.On)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Yellow, Kitronik_STOPbit.DisplayLights.Off)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Green, Kitronik_STOPbit.DisplayLights.Off)
-    basic.pause(1000)
+    basic.pause(2000)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Yellow, Kitronik_STOPbit.DisplayLights.On)
-    basic.pause(1000)
+    basic.pause(500)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Red, Kitronik_STOPbit.DisplayLights.Off)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Yellow, Kitronik_STOPbit.DisplayLights.Off)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Green, Kitronik_STOPbit.DisplayLights.On)
-    basic.pause(1000)
+    basic.pause(2000)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Red, Kitronik_STOPbit.DisplayLights.Off)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Yellow, Kitronik_STOPbit.DisplayLights.On)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Green, Kitronik_STOPbit.DisplayLights.Off)
@@ -204,13 +231,13 @@ basic.forever(function () {
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Red, Kitronik_STOPbit.DisplayLights.On)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Yellow, Kitronik_STOPbit.DisplayLights.Off)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Green, Kitronik_STOPbit.DisplayLights.Off)
-    basic.pause(1000)
+    basic.pause(2000)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Yellow, Kitronik_STOPbit.DisplayLights.On)
-    basic.pause(1000)
+    basic.pause(500)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Red, Kitronik_STOPbit.DisplayLights.Off)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Yellow, Kitronik_STOPbit.DisplayLights.Off)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Green, Kitronik_STOPbit.DisplayLights.On)
-    basic.pause(1000)
+    basic.pause(2000)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Yellow, Kitronik_STOPbit.DisplayLights.On)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Green, Kitronik_STOPbit.DisplayLights.Off)
     basic.pause(1000)
@@ -224,13 +251,13 @@ See if you can see which blocks in the first stage can be removed. Only remove t
 basic.forever(function () {
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Red, Kitronik_STOPbit.DisplayLights.On)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Yellow, Kitronik_STOPbit.DisplayLights.Off)
-    basic.pause(1000)
+    basic.pause(2000)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Yellow, Kitronik_STOPbit.DisplayLights.On)
-    basic.pause(1000)
+    basic.pause(500)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Red, Kitronik_STOPbit.DisplayLights.Off)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Yellow, Kitronik_STOPbit.DisplayLights.Off)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Green, Kitronik_STOPbit.DisplayLights.On)
-    basic.pause(1000)
+    basic.pause(2000)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Yellow, Kitronik_STOPbit.DisplayLights.On)
     Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Green, Kitronik_STOPbit.DisplayLights.Off)
     basic.pause(1000)
