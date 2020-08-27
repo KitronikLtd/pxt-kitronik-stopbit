@@ -7,11 +7,11 @@
 ### Introduction @unplugged
 Learn how to use the Kitronik STOP:bit and code a basic traffic light sequence with a BBC micro:bit. 
 
-![StopBit on Red](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/Stop-Bit-Red-Light-On.jpg)
+![StopBit on red](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/stop-bit-red-light-on.jpg)
 
 ## Assembly
 ### Step 1 @unplugged
-If not already done, attach the BBC micro:bit onto STOP:bit.  Click ![Here] (https://resources.kitronik.co.uk/pdf/5642-stop-bit-bbc-microbit-pedestrian-crossing-traffic-light-datasheet.pdf) is a link to the datasheet to guide you. 
+If not already done, attach the BBC micro:bit onto STOP:bit.  Click [Here](https://resources.kitronik.co.uk/pdf/5642-stop-bit-bbc-microbit-pedestrian-crossing-traffic-light-datasheet.pdf) is a link to the datasheet to guide you. 
 
 
 ### Step 2

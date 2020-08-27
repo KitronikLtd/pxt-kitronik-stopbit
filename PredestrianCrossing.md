@@ -7,7 +7,7 @@
 ### Introduction @unplugged
 Learn how to use the Kitronik STOP:bit and code a traffic light sequence that has an predestrial crossing. 
 
-![StopBit on red](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/Stop-Bit-Red-Light-On.jpg)
+![StopBit on red](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/stop-bit-red-light-on.jpg)
 
 ## Assembly
 ### Step 1
@@ -157,7 +157,7 @@ So we got the walking person appearing.  But there seems to be a couple of issue
 > The walking person always stays on screen.
 
 Certainly can not have people walking out onto on coming traffic. Seem like we need to add some more code to fix this.
-![Bug in code](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/Bug-Green.jpg)
+![Bug in code](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/bug-green.jpg)
 
 ### Step 11
 To halt the traffic light sequence we need to add a ``||basic:pause||`` and set this to 2 seconds (2000 milliseconds).  This should give people time to cross.
