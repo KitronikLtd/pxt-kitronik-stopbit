@@ -7,7 +7,7 @@
 ### Introduction @unplugged
 Learn how to use two Kitronik STOP:bit's with radio control's to traffic light sequence with a predestrian crossing. This will require two BBC micro:bit's and two Kitronik STOP:bit's.
 The code on the left editor will be for one STOP:bit, the code on the right editor will be for the other STOP:bit.  This tutorial will take a step-by-step guide of both sides of the code.
-It is recommended to complete the Predestrian Crossing tutorial (Click [here] (https://makecode.microbit.org/#tutorial:https://github.com/KitronikLtd/pxt-kitronik-stopbit/PredestrianCrossing)) and the Radio Traffic light tutorial (Click [Here] (https://makecode.microbit.org/---multi#tutorial:https://github.com/KitronikLtd/pxt-kitronik-stopbit/RadioTrafficLightLeft:|:tutorial:https://github.com/KitronikLtd/pxt-kitronik-stopbit/RadioTrafficLightRight))
+It is recommended to complete the Predestrian Crossing tutorial click [here] (https://makecode.microbit.org/#tutorial:https://github.com/KitronikLtd/pxt-kitronik-stopbit/PredestrianCrossing) and the Radio Traffic light tutorial click [Here] (https://makecode.microbit.org/---multi#tutorial:https://github.com/KitronikLtd/pxt-kitronik-stopbit/RadioTrafficLightLeft:|:tutorial:https://github.com/KitronikLtd/pxt-kitronik-stopbit/RadioTrafficLightRight)
 as this tutorial will combine these two elements together.
 ![Two Stopbits](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/two-stopbits.jpg)
 
