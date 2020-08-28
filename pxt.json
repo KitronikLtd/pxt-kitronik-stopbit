@@ -10,7 +10,11 @@
         "README.md",
         "stopbit.ts",
         "BasicSequence.md",
-        "PredestrianCrossing.md"
+        "PredestrianCrossing.md",
+        "RadioTrafficLightLeft.md",
+        "RadioTrafficLightRight.md",
+        "RadioCrossingLeft.md",
+        "RadioCrossingRight.md"
     ],
     "testFiles": [
         "tests.ts"
