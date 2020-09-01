@@ -69,7 +69,7 @@ Connect your BBC micro:bit and click ``|Download|``.  Once programmed, power the
 ### Lights are working @unplugged
 Our lights and assembly are working. Great! Lets start the next step to coding the light sequence.  For this get a pen and paper see if you can write down the traffic light sequence. Think about which lights are on and off as well.
 Once you are done, come back and click OK to get to the next stage.
-![Note and Pen](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/Note-Green.jpg)
+![Note and Pen](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/note-green.jpg)
 
 ## Traffic light Sequence
 
