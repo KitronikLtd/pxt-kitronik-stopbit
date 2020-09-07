@@ -1,11 +1,11 @@
 ### @activities true
 ### @explicitHints true
 
-# STOP:bit Traffic Light and Predestrian Crossing
+# STOP:bit Traffic Light and Pedestrian Crossing
 
 ## Introduction
 ### Introduction @unplugged
-Learn how to use the Kitronik STOP:bit and code a traffic light sequence that has an predestrial crossing. 
+Learn how to use the Kitronik STOP:bit and code a traffic light sequence that has an pedestrial crossing. 
 
 ![StopBit on red](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/stop-bit-red-light-on.jpg)
 
