@@ -272,5 +272,5 @@ basic.forever(function () {
 Connect your BBC micro:bit and click ``|Download|``.  Once programmed, power the BBC micro:bit and check that the traffic light sequence remains the same.
 
 ### Traffic Light Tutorial Complete @unplugged
-Did the traffic light sequence remain the same? We have been successful in optimising our code and making it more streamline. We have completed the tutorial.  If you wish to try more tutorials visit the Kitronik STOP:bit page
+Did the traffic light sequence remain the same? You have been successful in optimising our code and have completed this tutorial.  If you wish to try more tutorials visit the Kitronik STOP:bit page
 http://www.kitronik.co.uk/5642
