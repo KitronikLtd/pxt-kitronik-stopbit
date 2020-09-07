@@ -5,7 +5,7 @@
 
 ## Introduction
 ### Introduction @unplugged
-Learn how to use the Kitronik STOP:bit and code a traffic light sequence that has an pedestrial crossing. 
+Learn how to use the Kitronik STOP:bit and code a traffic light sequence that has an pedestrian crossing. 
 
 ![StopBit on red](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/stop-bit-red-light-on.jpg)
 
