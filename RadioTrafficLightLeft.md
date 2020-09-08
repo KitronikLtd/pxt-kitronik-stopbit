@@ -5,17 +5,17 @@
 
 ## Introduction
 ### Introduction @unplugged
-Learn how to use two Kitronik STOP:bit's with radio control's to alternate traffic light sequences. This will require two BBC micro:bit's and two Kitronik STOP:bit's.
-The code on the left editor will be for one STOP:bit, the code on the right editor will be for the other STOP:bit.
-This form of radio control will be working on a passing a token method of a control system. 
-This tutorial will take a step-by-step guide of both sides of the code.
-
-![Two Stopbits](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/two-stopbits.jpg)
+Learn how to use two Kitronik STOP:bits with radio controls to alternate traffic light sequences. This will require two BBC micro:bits and two Kitronik STOP:bits.  
+The code on the left editor will be for one STOP:bit, and the code on the right editor will be for the other STOP:bit.  
+This form of radio control will be using a 'passing a token method' of control system.  
+This tutorial will take you through a step-by-step guide for both sides of the code.  
+  
+![Two Stopbits](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/two-stopbit.jpg)
 
 ## Basic radio trigger
 ### Step 1
-micro:bit radio's talk in groups. We need to set the radio group the two micro:bit's are in, so that they wil communicate with each other. The group can be any number 1-255, in this example we will use 1. If there are several micro:bit radio pairs then each pair should use a different number.     
-From the radio section, place the ``||radio:set Group||`` into the ``||basic.onStart||`` block and set the group to 1.
+micro:bit radios talk in groups. We need to set a radio group for the two micro:bits so that they will communicate with each other. The group can be any number from 1-255 - in this example we will use 1. If there are several micro:bit radio pairs then each pair should use a different number.  
+From the ``||radio:Radio||`` cateogry, place the ``||radio:set group||`` block into the ``||basic: on start||`` section and set the group to 1.
 
 #### ~ tutorialhint
 ```blocks
@@ -23,10 +23,9 @@ radio.setGroup(1)
 ```
 
 ### Step 2
-We want to send a radio message to the other STOP:bit to do something, such as start the traffic light sequence on a button press. 
-When sending any radio messages we will send a string. The name acts as a 'token', so the reciever knows when it has received to start the traffic light sequence.
-Add ``||input:onButtonA||``. To send the message, from the radio section add ``||radio:send String||`` this will let us send a name and value to the receiving STOP:bit.  
-The string will be an instruction to "Start Sequence"
+We want to send a radio message to the other STOP:bit to do something, such as start the traffic light sequence on a button press. When sending any radio messages we will send a string. The name acts as a 'token', so the reciever knows when to start the traffic light sequence.  
+Add an ``||input:on button A||`` block. To send the message, from the ``||radio:Radio||`` category add a ``||radio:send string||`` block. This will let us send some text to the receiving STOP:bit. The string will be an instruction to "Start Sequence".
+
 #### ~ tutorialhint
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -35,11 +34,12 @@ input.onButtonPressed(Button.A, function () {
 ```
 
 ### Step 3
-Now we have a basic controller to send a message to the receiving STOP:bit to start the traffic light sequence.  Connect your BBC micro:bit and click ``|Download|``.
-
+Now we have a basic controller to send a message to the receiving STOP:bit to start the traffic light sequence.  
+Connect your BBC micro:bit and click ``|Download|``.
 
 ### Transmitter Code Done @unplugged
-Click the OK button on the right editor and start work on the receiver code.  Once that tutorial is complete, come back and click OK to get to the next stage.
+Click the OK button on the right editor and start work on the receiver code.  
+Once that tutorial is complete, come back and click OK to get to the next stage.  
 ![Right Arrow](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/right-arrow.jpg)
 
 ## Traffic Light sequence
