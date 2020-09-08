@@ -5,16 +5,14 @@
 
 ## Introduction
 ### Introduction @unplugged
-Please read the introduction on the left editor and follow the instructions.  When the tutorial indicates to start on this tutorial, then click the OK button to start. 
-
+Please read the introduction on the left editor and follow the instructions.  
+When the tutorial indicates to start on this tutorial, then click the OK button to start.  
 ![Left Arrow](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/left-arrow.jpg)
 
 ## Basic Radio Receiver
-
 ### Step 1
-Now we need to setup the receiving STOP:bit, lets start on the receiver code.  We wil need to program this into the second micro:bit.
-Like at the start of the previous code we need to indicate which BBC micro:bit this is and set the radio group.
-Add the ``||radio:set Group||`` and set its group to match the previous code in the left editor (we used 1 in our example)to the ``||basic.onStart||``.  .
+Now we need to set up the receiving STOP:bit. We will need to program this into the second micro:bit.  
+Like at the start of the previous code, we need to indicate which BBC micro:bit this is and set the radio group. Add the ``||radio:set group||`` block to the ``||basic.onStart||`` section and set its group to match the one in the left editor (we used 1 in our example). 
 
 #### ~ tutorialhint
 ```blocks
@@ -22,7 +20,8 @@ radio.setGroup(1)
 ```
 
 ### Step 2
-When the code starts we want our STOP:bit to be on Red.  Add ``||Kitronik_STOPbit.LightState||`` after the ``||radio:set Group||`` and set it to "Stop"
+When the code starts, we want our STOP:bit to be on "Red".  Add a ``||Kitronik_STOPbit.Make Traffic Light state||`` block after ``||radio:set group||`` and set it to ``||Kitronik_STOPbit.Stop||``.
+
 #### ~ tutorialhint
 ```blocks
 radio.setGroup(1)
@@ -30,7 +29,8 @@ Kitronik_STOPbit.trafficLightState(Kitronik_STOPbit.LightStates.Stop)
 ```
 
 ### Step 3
-Now our code is ready to receive messages.  From the radio section drag in the ``||radio:on Receive String||``, this will have a text input within the block.
+Now our code is ready to receive messages.  
+From the ``||radio:Radio||`` category, drag in the ``||radio:on radio receivedString||`` block - this will have a text input within the block.
 
 #### ~ tutorialhint
 ```blocks
@@ -40,10 +40,9 @@ radio.onReceivedString(function (receivedString) {
 ```
 
 ### Step 4
-Within the ``||radio:on Receive String||``, we need to check the received message is what we are expecting. If the message is something we know about we can handle it - we call the code that does something a handler. 
-Add ``||logic:if||`` into the function, and compare the name equals "Forward".
-Place an ``||logic:"" equals ""||`` compare block into the ``||logic:if||``. From the ``||radio:on Received String||``, click and drag the "Received String" variable into the start of the ``||logic:equals||`` block.  Now type into the other matching text box "Start Sequence".
-The phrase "Start Sequence" needs to be spelt the same as the transmitter code and is case sensitive.
+Within the ``||radio:on radio receivedString||`` block, we need to check the received message is what we are expecting. If the message is something we know about we can handle it - we call the code that does something a handler.  
+Add an ``||logic:if||`` block inside the block and check the received message is "Start Sequence". Place an ``||logic:" " = " "||`` compare block into the ``||logic:if||`` statement. From the ``||radio:on radio receivedString||``, drag ``||variables:receivedString||`` into the first text section, and then type "Start Sequence" into the comparison text box. (**Note:** Make sure the spelling and letter cases are identical to the sent message).
+
 #### ~ tutorialhint
 ```blocks
 radio.onReceivedString(function (receivedString) {
@@ -54,7 +53,8 @@ radio.onReceivedString(function (receivedString) {
 ```
 
 ### Step 5
-Next, create a variable called "Start Lights".  Inside the if statement place ``||variables:set Start Lights||`` and set it to ``||logic:true||``
+Next, create a variable called ``||variables:Start_Lights||``, and inside the ``||logic:if||`` section, ``||variables:set Start_Lights to||`` ``||logic:true||``.
+
 #### ~ tutorialhint
 ```blocks
 radio.onReceivedString(function (receivedString) {
@@ -65,7 +65,8 @@ radio.onReceivedString(function (receivedString) {
 ```
 
 ### Step 6
-Now coding in the ``||basic:forever loop||``, add an ``||logic:if||`` and will be checking for ``||variables:Start Lights||`` ``||logic:equals||`` ``||logic:true||``.
+Now in the ``||basic:forever||`` loop, add an ``||logic:if||`` block which will be checking whether ``||variables:Start_Lights||`` ``||logic:= true||``.
+
 #### ~ tutorialhint
 ```blocks
 basic.forever(function () {
@@ -76,8 +77,9 @@ basic.forever(function () {
 ```
 
 ### Step 7
-Inside this "if" bracket, place the traffic sequence.  At the start of our code we set the light to be at "stop" already, so will not need to do that again.
-Our sequence will be shifted by one and goes "Get ready" -> "Go" -> "Ready to stop" -> "Stop".  Add this sequence along with the required pauses at the start and inbetween each step.
+Inside this ``||logic:if||`` bracket, create the traffic light sequence. At the start of our code, we set the light to be at "Stop" already, so do not include that again.  
+Our sequence will be shifted by one and goes "Get ready" **->** "Go" **->** "Ready to stop" **->** "Stop". Add this sequence, along with the required ``||basic:pauses||`` at the start and inbetween each step.
+
 #### ~ tutorialhint
 ```blocks
 basic.forever(function () {
@@ -95,15 +97,15 @@ basic.forever(function () {
 ```
 
 ### Step 8
-Let's try the code. Connect your secondary BBC micro:bit and click ``|Download|`` to transfer your code. When you have both STOP:bit's powered up press button A and see if the traffic lights start on the other STOP:bit.
+Let's try the code. Connect your second BBC micro:bit and click ``|Download|`` to transfer your code.  
+When you have both STOP:bits powered up, press ``||input:button A||`` on the first one and see if the traffic lights start on the other STOP:bit.
 
 ### Basic Radio Receive message @unplugged
-We now have two micro:bit's coded, but only one of them doing the traffic light sequence. Let's go back to the other STOP:bit and code it with the traffic light sequence.
-When you are ready, lets go back to the Transmitter tutorial for the next stage.
+We now have two micro:bits coded, but only one of them doing the traffic light sequence. Let's go back to the other STOP:bit and code it with the traffic light sequence.  
+When you are ready, let's go back to the Transmitter tutorial for the next stage.  
 ![Left Arrow](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/left-arrow.jpg)
 
 ## Changing Directions
-
 ### Changing Directions @unplugged
 We are going to receive some new radio messages to deal with from the changing of directions and stopping. Click the OK button and let's get started.
 
