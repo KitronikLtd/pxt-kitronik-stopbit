@@ -75,7 +75,7 @@ input.onButtonPressed(Button.A, function () {
 ### Step 6
 Traditionally, pedestrian crossings have a "Red person" and a "Green person" to show when to stop and wait and when to walk.  
 In the ``||basic:show leds||`` block, click on the square to chose which LED on the display turns on and create a stick person standing.  
-HINT: Don't forget the BBC micro:bit is turned by 90 degrees when attached to the STOP:bit.
+(**Hint:** Don't forget the BBC micro:bit is turned by 90° when attached to the STOP:bit).
 
 #### ~ tutorialhint
 ```blocks
