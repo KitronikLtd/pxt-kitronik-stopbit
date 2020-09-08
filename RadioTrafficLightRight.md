@@ -105,13 +105,11 @@ We now have two micro:bits coded, but only one of them doing the traffic light s
 When you are ready, let's go back to the Transmitter tutorial for the next stage.  
 ![Left Arrow](https://KitronikLtd.github.io/pxt-kitronik-stopbit/assets/left-arrow.jpg)
 
-## Changing Directions
-### Changing Directions @unplugged
-We are going to receive some new radio messages to deal with from the changing of directions and stopping. Click the OK button and let's get started.
-
+## Sending Messages
 ### Step 9
-We added (on the other STOP:bit) two blocks for changing the variable "Start Lights" so it does not run the traffic light code again and to trigger the other to start.
-Insert ``||variables:set Start Lights||`` to ``||logic:false||`` after the light sequence. Add a ``||radio:send String||``with "Start Sequence" after aswell.
+We added (on the other STOP:bit) two blocks for changing the variable ``||variables:Start_Lights||`` so that it does not run the traffic light code again, and to trigger the other to start.  
+Insert ``||variables:set Start_Lights to||`` ``||logic:false||`` after the light sequence, and then add a ``||radio:send string||`` with "Start Sequence" after this as well.
+
 #### ~ tutorialhint
 ```blocks
 basic.forever(function () {
@@ -131,9 +129,8 @@ basic.forever(function () {
 ```
 
 ### Step 8
-Let's code this with the secondary STOP:bit. Connect your secondary BBC micro:bit and click ``|Download|`` to transfer your code.
-Once programmed, press button A on the other STOP:bit and see if they alternate traffic light sequence.
+Connect your second BBC micro:bit and click ``|Download|`` to transfer your code.  
+Once programmed, press `||input:button A||`` on the other STOP:bit and see if they alternate traffic light sequences.
 
 ### Radio Traffic Light Tutorial Complete @unplugged
-This tutorial is complete, we have managed to code two alternating STOP:bit's working via radio messages.  If you wish to try more tutorials visit the Kitronik STOP:bit page
-http://www.kitronik.co.uk/5642
+This tutorial is complete! We have managed to code two alternating STOP:bits working via radio messages. If you wish to try more tutorials, visit the Kitronik STOP:bit page: http://www.kitronik.co.uk/5642
