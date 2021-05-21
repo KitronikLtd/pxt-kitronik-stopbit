@@ -16,7 +16,7 @@
         "RadioCrossingLeft.md",
         "RadioCrossingRight.md",
         "_locales/hu/pxt-kitronik-stopbit-jsdoc-strings.json",
-        "_locales/hu/pxt-kitronik-stopbit-strings.json",
+        "_locales/hu/pxt-kitronik-stopbit-strings.json"
 
     ],
     "testFiles": [
