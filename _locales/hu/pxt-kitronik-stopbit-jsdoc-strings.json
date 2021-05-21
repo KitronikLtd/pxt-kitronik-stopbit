@@ -1,0 +1,9 @@
+{
+  "Kitronik_STOPbit": "Kitronik Stopbit Csomag\r\n1.0 verzió\r\nKiadás dátuma:",
+  "Kitronik_STOPbit.DisplayLights": "Jelzőlámpa be/ki állapotok",
+  "Kitronik_STOPbit.LightColours": "Jelzőlámpa lehetséges színei",
+  "Kitronik_STOPbit.LightStates": "Jelzések, melyeket a jelzőlámpa megjeleníthet",
+  "Kitronik_STOPbit.trafficLightLED": "Válassz egy lámpát és kapcsold be vagy ki",
+  "Kitronik_STOPbit.trafficLightLED|param|ledColour": "@param megvilágítás",
+  "Kitronik_STOPbit.trafficLightState": "Válassz állapotot a lámpának"
+}

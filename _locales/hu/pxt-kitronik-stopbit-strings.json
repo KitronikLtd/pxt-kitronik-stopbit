@@ -1,0 +1,15 @@
+{
+  "Kitronik_STOPbit.DisplayLights.Off|block": "Sötét",
+  "Kitronik_STOPbit.DisplayLights.On|block": "Világít",
+  "Kitronik_STOPbit.LightColours.Green|block": "Zöld",
+  "Kitronik_STOPbit.LightColours.Red|block": "Piros",
+  "Kitronik_STOPbit.LightColours.Yellow|block": "Sárga",
+  "Kitronik_STOPbit.LightStates.GetReady|block": "Készülj",
+  "Kitronik_STOPbit.LightStates.Go|block": "Mehetsz",
+  "Kitronik_STOPbit.LightStates.ReadyToStop|block": "Készülj megállni",
+  "Kitronik_STOPbit.LightStates.Stop|block": "Állj",
+  "Kitronik_STOPbit.trafficLightLED|block": "%ledColour| fényjelzés legyen %illumination|",
+  "Kitronik_STOPbit.trafficLightState|block": "Lámpa állapota legyen %lightState|",
+  "Kitronik_STOPbit|block": "Kitronik STOP:bit",
+  "{id:category}Kitronik_STOPbit": "Kitronik_STOPbit"
+}

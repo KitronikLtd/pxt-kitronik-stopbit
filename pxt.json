@@ -14,14 +14,17 @@
         "RadioTrafficLightLeft.md",
         "RadioTrafficLightRight.md",
         "RadioCrossingLeft.md",
-        "RadioCrossingRight.md"
+        "RadioCrossingRight.md",
+        "_locales/hu/pxt-kitronik-stopbit-jsdoc-strings.json",
+        "_locales/hu/pxt-kitronik-stopbit-strings.json",
+
     ],
     "testFiles": [
         "tests.ts"
     ],
+    "public": true,
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "tsprj",
-    "public": true
+    "preferredEditor": "tsprj"
 }
