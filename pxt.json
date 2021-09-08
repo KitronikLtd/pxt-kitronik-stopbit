@@ -19,7 +19,6 @@
         "_locales/hu/pxt-kitronik-stopbit-strings.json",
         "_locales/nb/pxt-kitronik-stopbit-jsdoc-strings.json",
         "_locales/nb/pxt-kitronik-stopbit-strings.json"
-
     ],
     "testFiles": [
         "tests.ts"
