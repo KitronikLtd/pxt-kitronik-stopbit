@@ -2,7 +2,7 @@
 
 # Kitronik blocks for micro:bit
 
-Blocks that support [Kitronik STOP:bit board for the micro:bit]
+Blocks that support [Kitronik STOP:bit board for the micro:bit](https://kitronik.co.uk/5642).
 
 ## STOP:bit
 
@@ -29,7 +29,6 @@ MIT
 ## Supported targets
 
 * for PXT/microbit
-(The metadata above is needed for package search.)
 
 
 ```package
