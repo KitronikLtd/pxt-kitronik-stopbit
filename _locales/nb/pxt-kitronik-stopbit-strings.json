@@ -1,0 +1,15 @@
+{
+  "Kitronik_STOPbit.DisplayLights.Off|block": "Av",
+  "Kitronik_STOPbit.DisplayLights.On|block": "På",
+  "Kitronik_STOPbit.LightColours.Green|block": "Grønn",
+  "Kitronik_STOPbit.LightColours.Red|block": "Rød",
+  "Kitronik_STOPbit.LightColours.Yellow|block": "Gul",
+  "Kitronik_STOPbit.LightStates.GetReady|block": "Gjør deg klar",
+  "Kitronik_STOPbit.LightStates.Go|block": "Kjør",
+  "Kitronik_STOPbit.LightStates.ReadyToStop|block": "Klar til å stoppe",
+  "Kitronik_STOPbit.LightStates.Stop|block": "Stopp",
+  "Kitronik_STOPbit.trafficLightLED|block": "Sett %ledColour|trafikklysene %illumination|",
+  "Kitronik_STOPbit.trafficLightState|block": "Sett trafikklysene til %lightState|",
+  "Kitronik_STOPbit|block": "Kitronik STOP:bit",
+  "{id:category}Kitronik_STOPbit": "Kitronik_STOPbit"
+}

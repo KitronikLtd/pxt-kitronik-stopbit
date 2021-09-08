@@ -1,0 +1,9 @@
+{
+  "Kitronik_STOPbit": "Kitronik Stopbit Pakkeversjon 1.0\r\Utgivelsesdato:",
+  "Kitronik_STOPbit.DisplayLights": "Trafikklys på / av -tilstander ",
+  "Kitronik_STOPbit.LightColours": "Fargealternativer for trafikklys",
+  "Kitronik_STOPbit.LightStates": "Ulike tilstander trafikklyset kan komme inn ",
+  "Kitronik_STOPbit.trafficLightLED": "Velg et lys og slå det på eller av ",
+  "Kitronik_STOPbit.trafficLightLED|param|ledColour": "@param illumination",
+  "Kitronik_STOPbit.trafficLightState": "Velg en trafikklysstatus "
+}
