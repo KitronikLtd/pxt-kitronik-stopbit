@@ -77,7 +77,7 @@ Once you are done, come back and click OK to get to the next stage.
 
 ### Step 7
 To get the traffic light sequence to continuously repeat, our code will be using the ``||basic:forever||`` block.  
-The previous code in the ``||input:on button A||`` and ``||input:on bubtton B||`` sections can be removed.
+The previous code in the ``||input:on button A||`` and ``||input:on button B||`` sections can be removed.
 
 #### ~ tutorialhint
 ```blocks
