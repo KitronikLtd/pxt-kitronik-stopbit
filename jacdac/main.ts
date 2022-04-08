@@ -22,7 +22,7 @@ namespace servers {
             this.yellow = this.handleRegBool(pkt, jacdac.TrafficLightReg.Yellow, this.yellow)
 
             Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Red, toDisplayLights(this.red))
-            Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Green, toDisplayLights(this.red))
+            Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Green, toDisplayLights(this.green))
             Kitronik_STOPbit.trafficLightLED(Kitronik_STOPbit.LightColours.Yellow, toDisplayLights(this.yellow))
         }
     }
