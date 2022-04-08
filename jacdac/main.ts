@@ -34,6 +34,6 @@ namespace modules {
     /**
      * Traffic light controller for the Kitronik Stopbit lights
      */
-    //% fixedInstance
+    //% fixedInstance whenUsed block="kitronik stopbit lights"
     export const KitronikStopbitLights = new TrafficLightClient("kitronik stopbit lights?device=self")
 }
