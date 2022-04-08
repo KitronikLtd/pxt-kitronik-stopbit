@@ -1,12 +1,14 @@
 {
-    "name": "jacdac",
+    "name": "jacdac-kitronik-stopbit",
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "pxt-kitronik-stopbit": "github:pelikhan/pxt-kitronik-stopbit#v1.1.2",
+        "jacdac": "github:microsoft/pxt-jacdac#v0.8.21",
+        "jacdac-traffic-light": "github:microsoft/pxt-jacdac/traffic-light#v0.8.21"
     },
     "files": [
-        "main.blocks",
         "main.ts",
         "README.md"
     ],
@@ -20,5 +22,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
