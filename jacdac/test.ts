@@ -1,1 +1,9 @@
-// tests go here; this will not be compiled when this package is used as an extension.
+forever(() => {
+    const stop = modules.kitronikStopbitLights
+    stop.setRed(!stop.red())
+    pause(500)
+    stop.setYellow(!stop.yellow())
+    pause(500)
+    stop.setGreen(!stop.green())
+    pause(500)
+})

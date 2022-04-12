@@ -6,8 +6,8 @@
         "radio": "*",
         "microphone": "*",
         "pxt-kitronik-stopbit": "github:pelikhan/pxt-kitronik-stopbit",
-        "jacdac": "github:microsoft/pxt-jacdac#v0.8.21",
-        "jacdac-traffic-light": "github:microsoft/pxt-jacdac/traffic-light#v0.8.21"
+        "jacdac": "github:microsoft/pxt-jacdac#v0.9.3",
+        "jacdac-traffic-light": "github:microsoft/pxt-jacdac/traffic-light#v0.9.3"
     },
     "files": [
         "main.ts",
@@ -17,7 +17,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "4.1.16",
+        "target": "4.0.18",
         "targetId": "microbit"
     },
     "supportedTargets": [

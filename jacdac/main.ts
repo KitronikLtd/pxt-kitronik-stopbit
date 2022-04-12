@@ -1,6 +1,13 @@
 // % deprecated
 namespace Kitronik_STOPbit {
+}
 
+namespace modules {
+    /**
+     * Traffic light controller for the Kitronik Stopbit lights
+     */
+    //% fixedInstance whenUsed block="kitronik stopbit lights"
+    export const kitronikStopbitLights = new TrafficLightClient("kitronik stopbit lights?device=self")
 }
 
 namespace servers {
@@ -13,7 +20,7 @@ namespace servers {
         private yellow: boolean
 
         constructor() {
-            super("", jacdac.SRV_TRAFFIC_LIGHT)
+            super(jacdac.SRV_TRAFFIC_LIGHT)
         }
 
         handlePacket(pkt: jacdac.JDPacket) {
@@ -28,12 +35,4 @@ namespace servers {
     }
 
     jacdac.startSelfServers(() => [new TrafficLightServer()])
-}
-
-namespace modules {
-    /**
-     * Traffic light controller for the Kitronik Stopbit lights
-     */
-    //% fixedInstance whenUsed block="kitronik stopbit lights"
-    export const KitronikStopbitLights = new TrafficLightClient("kitronik stopbit lights?device=self")
 }
