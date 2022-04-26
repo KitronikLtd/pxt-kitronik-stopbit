@@ -6,8 +6,8 @@ namespace modules {
     /**
      * Traffic light controller for the Kitronik Stopbit lights
      */
-    //% fixedInstance whenUsed block="kitronik stopbit lights"
-    export const kitronikStopbitLights = new TrafficLightClient("kitronik stopbit lights?device=self")
+    //% fixedInstance whenUsed block="kitronik stopbit"
+    export const kitronikStopbitLights = new TrafficLightClient("kitronik stopbit?dev=self")
 }
 
 namespace servers {
@@ -34,5 +34,8 @@ namespace servers {
         }
     }
 
-    jacdac.startSelfServers(() => [new TrafficLightServer()])
+    function start() {
+        jacdac.startSelfServers(() => [new TrafficLightServer()])
+    }
+    start()
 }
