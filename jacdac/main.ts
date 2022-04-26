@@ -34,6 +34,7 @@ namespace servers {
         }
     }
 
+    jacdac.productIdentifier = 0x3f1efe95
     function start() {
         jacdac.startSelfServers(() => [new TrafficLightServer()])
     }
