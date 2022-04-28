@@ -34,6 +34,7 @@ namespace servers {
 
     function start() {
         jacdac.productIdentifier = 0x3f1efe95
+        jacdac.deviceDescription = "Kitronik STOP:bit"
         jacdac.startSelfServers(() => [new TrafficLightServer()])
     }
     start()
