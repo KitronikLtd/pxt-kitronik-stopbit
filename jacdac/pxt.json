@@ -3,8 +3,8 @@
     "version": "1.1.15",
     "dependencies": {
         "core": "*",
-        "jacdac": "github:microsoft/pxt-jacdac#v0.10.27",
-        "jacdac-traffic-light": "github:microsoft/pxt-jacdac/traffic-light#v0.10.27"
+        "jacdac": "github:microsoft/pxt-jacdac#v0.10.29",
+        "jacdac-traffic-light": "github:microsoft/pxt-jacdac/traffic-light#v0.10.29"
     },
     "files": [
         "main.ts",
@@ -14,7 +14,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "4.1.30",
+        "target": "4.1.33",
         "targetId": "microbit"
     },
     "supportedTargets": [
